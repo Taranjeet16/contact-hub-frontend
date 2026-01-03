@@ -1,98 +1,92 @@
-# Contact Management Web App
+Contact Hub – Frontend
 
-A Contact Management Web Application built using the **MERN stack** as part of a Web Developer interview assignment.  
-The application demonstrates core MERN fundamentals with clean UI, REST APIs, and MongoDB integration.
+Frontend application for the Contact Management Web App, built using React.js and deployed on Vercel.
 
----
+This project consumes a REST API built with Node.js, Express, and MongoDB.
 
-## 🚀 Features
+🚀 Live Demo
 
-### Core Features
-- Add new contacts with client-side validation
-- Fields:
-  - Name (required)
-  - Email (valid format)
-  - Phone (required)
-  - Category (optional)
-  - Message (optional)
-- Store contacts in MongoDB
-- Display contacts in a list without page reload
-- Edit and update existing contacts
-- Delete contacts
-- Responsive and clean UI
+🔗 Frontend URL (Vercel)
+https://contact-hub-frontend.vercel.app/
 
-### Bonus Features
-- Contact categories with visual tags
-- Search contacts by name, email, or phone
-- Sort contacts
-- Export contacts to CSV
-- Category, edit, search, and export are bonus features.
+🛠 Tech Stack
 
----
+React.js
 
-## 🛠 Tech Stack
+Vite
 
-### Frontend
-- React.js
-- Vite
-- Tailwind CSS
+Tailwind CSS
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB (MongoDB Atlas)
+React Query
 
----
+Shadcn UI
 
-## 📁 Project Structure
+🔗 Backend API
 
-frontend/
-backend/
+The frontend communicates with the backend deployed on Render:
 
----
+🔗 API Base URL
+https://contact-hub-backend.onrender.com/api
 
-## 🔗 API Endpoints
+✨ Features
 
-| Method | Endpoint | Description |
-|------|---------|------------|
-| GET | /api/contacts | Fetch all contacts |
-| POST | /api/contacts | Create a new contact |
-| PUT | /api/contacts / /api/contacts/:id | Update an existing contact |
-| PATCH | /api/contacts/:id | Partially update a contact |
-| DELETE | /api/contacts/:id | Delete a contact |
+Contact form with client-side validation
 
----
+Fields:
 
-## 🧪 Validation Rules
+Name (required)
 
-- Name and Phone are required
-- Email must be in valid format
-- Submit button is disabled when the form is invalid
+Email (valid format)
 
----
+Phone (required)
 
-## ▶️ Run Project Locally
+Category (optional)
 
-### Frontend
-cd frontend
+Message (optional)
+
+Display contacts without page reload
+
+Update and delete contacts
+
+Responsive UI
+
+Error and success notifications
+
+▶️ Run Locally
+Responsive UI
 npm install
 npm run dev
 
-### Backend
-cd backend
-npm install
-npm run dev
+The app will run at:
+http://localhost:5173
 
-Create a .env file in the backend directory:
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
+Make sure the backend server is running locally or update the API URL accordingly.
 
-🌐 Deployment
-Frontend: Vercel / Netlify
-Backend: Render / Railway
-Database: MongoDB Atlas
+📁 Project Structure
+src/
+├── components/
+├── pages/
+├── services/
+│   └── api.ts
+├── types/
+└── App.tsx
+
+⚙️ Configuration
+
+The API base URL is defined in:
+src/services/api.ts
+const API_BASE_URL = "https://contact-hub-backend.onrender.com/api";
 
 👤 Author
 Taranjeet Singh
-B.Tech Computer Science & Engineering
+B.Tech – Computer Science & Engineering
 Aspiring MERN Stack Developer
+
+✅ Notes
+This repository contains frontend-only code
+Full-stack version is available in the combined repository:
+https://github.com/Taranjeet16/contact-hub
+
+Error and success notifications
+
+▶️ Run Locally
