@@ -1,7 +1,7 @@
 import { Contact, ContactFormData } from "@/types/contact";
 
-// TODO: Update this to your Express backend URL
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL =
+  "https://contact-hub-backend.onrender.com/api";
 
 export const contactApi = {
   // GET all contacts
